@@ -161,7 +161,7 @@ If you like this project feel free to follow us on Github.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Lucy Wanjiru for her contribution to this project.
+I would like to thank Microverse for providing the informations to do this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
