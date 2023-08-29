@@ -6,6 +6,53 @@
   <title>Leaderboard</title>
 </head>
 <body>
-  <h1>Hello webpack!</h1>
+  <main class="main-wrapper">
+
+    <div class="main-title-wrapper">
+      <div class="main-title-container">
+        <h1 class="main-title">
+          LeaderBoard
+        </h1>
+      </div>
+    </div>
+
+    <section class="content-section">
+      <div class="score-board-wrapper">
+        <div class="score-board-title-wrapper">
+          <h2 class="section-title">
+            Recent Scores
+          </h2>
+          <button id="refresh">Refresh</button>
+        </div>
+        <div class="score-list-wrapper">
+          <ul id="score-list">
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="add-score-wrapper">
+        <div class="add-score-title">
+          <h2 class="section-title">
+            Add Your Score
+          </h2>
+        </div>
+        <div class="score-form-wrapper">
+          <form action="" id="score-form">
+            <div class="input-container">
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="input-container">
+              <input type="number" name="score" id="score">
+            </div>
+            <div class="input-container">
+              <button type="submit" id="add-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
 </body>
 </html>
