@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #0b0b0b;
+}
+
+body {
+  background: #f5f5f5;
+  overflow-x: hidden;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+}
+
+.main-title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  padding: 0 2vw;
+  margin: 6vh 0;
+}
+
+.main-title {
+  font-size: 3rem;
+}
+
+#refresh {
+  padding: 6px 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: #0b0b0b55 2px 2px 4px;
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.score-board-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 6vw;
+  width: 50vw;
+  height: 90vh;
+}
+
+.add-score-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 6vw;
+  width: 50vw;
+  height: 90vh;
+}
+
+.score-board-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin: 25px 0;
+}
+
+.score-list-wrapper {
+  width: 100%;
+  height: 60%;
+  border: 2px solid black;
+}
+
+.score-form-wrapper {
+  width: 100%;
+}
+
+#score-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 4vh;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 6px 10px;
+}
+
+.input-container:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+}
+
+.input-container:last-child button {
+  padding: 6px 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: #0b0b0b55 2px 2px 4px;
+}
