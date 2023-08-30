@@ -49,6 +49,9 @@
 - **Linters**
 - **Webpack**
 - **Mobile First Design**
+- **Leaderboard API**
+- **Data Storing In Server**
+- **Dynamic List Creation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,9 +136,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Leaderboard API**
-- **Data Storing In Local Storage**
-- **Dynamic List Creation**
+- **Responsive Styling**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
