@@ -1,13 +1,5 @@
-import Data from "./data.js";
-
-const userInput = document.getElementById('name');
-const scoreInput = document.getElementById('score');
-const user = userInput.value.trim();
-const score = scoreInput.value.trim();
-
-export default addScore = async () => {
-  const newData = new Data(user, score);
-  const scoreURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/cpZfcWpPK0xkqbUHfKjE/score/';
+const addScore = async (newData) => {
+  const scoreURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/9Zauo9h1pY6f15rihTkl/scores/';
   const requestBody = JSON.stringify(newData);
 
   try {
@@ -21,7 +13,9 @@ export default addScore = async () => {
 
     const data = await response.json();
     return data.result;
-  } catch(error) {
+  } catch (error) {
     return error;
   }
-}
+};
+
+export default addScore;
