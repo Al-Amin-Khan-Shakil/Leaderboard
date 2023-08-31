@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  color: #0b0b0b;
+  color: #02383c;
+  font-size: 10px;
 }
 
 body {
-  background: #f5f5f5;
+  background: url('https://img.freepik.com/premium-photo/get-best-cyber-monday-deals-sports-equipment_670382-105917.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
   overflow-x: hidden;
 }
 
@@ -16,6 +21,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  background: linear-gradient(135deg, #f7ff9ff0 60%, #7dca6df0);
   width: 100vw;
 }
 
@@ -25,23 +31,37 @@ body {
   align-items: center;
   width: 100vw;
   height: 10vh;
-  padding: 0 2vw;
-  margin: 6vh 0;
+  padding: 0 3vw;
+  margin: 20px 0;
 }
 
 .main-title {
-  font-size: 3rem;
+  font-size: 4.2rem;
+  color: #258655;
+  font-family: 'Black Ops One', sans-serif;
 }
 
 #refresh {
   padding: 6px 10px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  color: #4e9f3d;
+  background: #fff9a6;
   box-shadow: #0b0b0b55 2px 2px 4px;
+  border: 2px solid #4e9f3d;
+  border-radius: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#refresh:hover {
+  color: #fff;
+  background: #4e9f3d;
 }
 
 .content-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -53,8 +73,8 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0 6vw;
-  width: 50vw;
-  height: 90vh;
+  width: 100vw;
+  height: 55vh;
 }
 
 .add-score-wrapper {
@@ -63,8 +83,8 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0 6vw;
-  width: 50vw;
-  height: 90vh;
+  width: 100vw;
+  height: 40vh;
 }
 
 .score-board-title-wrapper {
@@ -75,14 +95,34 @@ body {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 25px 0;
+  color: #1d7f30;
 }
 
 .score-list-wrapper {
   width: 100%;
-  height: 60%;
-  border: 2px solid black;
+  height: 80%;
+  border: 4px solid #4e9f3d;
+  border-radius: 4px;
+  overflow-y: scroll;
+}
+
+#score-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#score-list li {
+  list-style-type: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 4px 10px;
+}
+
+#score-list li:nth-child(odd) {
+  background-color: #7dca6d55;
 }
 
 .score-form-wrapper {
@@ -102,24 +142,87 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .input-container input {
   width: 100%;
   padding: 6px 10px;
+  font-size: 1.5rem;
+  border: 2px solid #4e9f3d;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-container input:focus {
+  outline: none;
+  border: 2px solid #337426;
+  box-shadow: #5557 0 0 5px;
 }
 
 .input-container:last-child {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 80%;
 }
 
 .input-container:last-child button {
   padding: 6px 10px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  color: #4e9f3d;
+  background: #fff9a6;
   box-shadow: #0b0b0b55 2px 2px 4px;
+  border: 2px solid #4e9f3d;
+  border-radius: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.input-container:last-child button:hover {
+  color: #fff;
+  background: #4e9f3d;
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+
+  .main-wrapper {
+    padding: 50px 0;
+  }
+
+  .content-section {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+  }
+
+  .score-board-wrapper {
+    width: 50vw;
+    height: 90vh;
+  }
+
+  .add-score-wrapper {
+    width: 50vw;
+    height: 90vh;
+  }
+
+  #refresh {
+    font-size: 1.3rem;
+  }
+
+  #score-list li {
+    font-size: 1.5rem;
+  }
+
+  .input-container input {
+    font-size: 1.3rem;
+  }
+
+  .input-container:last-child button {
+    font-size: 1.3rem;
+  }
 }
