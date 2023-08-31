@@ -149,6 +149,15 @@ body {
   width: 100%;
   padding: 6px 10px;
   font-size: 1.5rem;
+  border: 2px solid #4e9f3d;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-container input:focus {
+  outline: none;
+  border: 2px solid #337426;
+  box-shadow: #5557 0 0 5px;
 }
 
 .input-container:last-child {
