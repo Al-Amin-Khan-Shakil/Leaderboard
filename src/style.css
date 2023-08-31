@@ -48,7 +48,7 @@ body {
   color: #4e9f3d;
   background: #fff9a6;
   box-shadow: #0b0b0b55 2px 2px 4px;
-  border:2px solid #4e9f3d;
+  border: 2px solid #4e9f3d;
   border-radius: 3px;
   transition: 0.3s;
   cursor: pointer;
@@ -164,7 +164,7 @@ body {
   color: #4e9f3d;
   background: #fff9a6;
   box-shadow: #0b0b0b55 2px 2px 4px;
-  border:2px solid #4e9f3d;
+  border: 2px solid #4e9f3d;
   border-radius: 3px;
   transition: 0.3s;
   cursor: pointer;
@@ -173,4 +173,47 @@ body {
 .input-container:last-child button:hover {
   color: #fff;
   background: #4e9f3d;
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 16px;
+  }
+
+  .main-wrapper {
+    padding: 50px 0;
+  }
+
+  .content-section {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+  }
+
+  .score-board-wrapper {
+    width: 50vw;
+    height: 90vh;
+  }
+
+  .add-score-wrapper {
+    width: 50vw;
+    height: 90vh;
+  }
+
+  #refresh {
+    font-size: 1.3rem;
+  }
+
+  #score-list li {
+    font-size: 1.5rem;
+  }
+
+  .input-container input {
+    font-size: 1.3rem;
+  }
+
+  .input-container:last-child button {
+    font-size: 1.3rem;
+  }
 }
