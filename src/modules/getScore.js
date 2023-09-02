@@ -1,5 +1,5 @@
 const getScore = async () => {
-  const scoreURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/9Zauo9h1pY6f15rihTkl/scores/';
+  const scoreURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/L53H15QxkWnGNnJ93Di0/scores/';
 
   const response = await fetch(scoreURL);
   const data = await response.json();
